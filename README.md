@@ -55,6 +55,8 @@ if __name__ == '__main__':
 
 - [ ] Dataset Generation
 
+- [ ] Model Training 
+
 - [ ] Visualization
 
 - [ ] More Robots (Franka Emika Panda, Allegro Hand, ...)
