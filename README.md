@@ -2,7 +2,7 @@
 
 Implementation for paper "Encoding the Precise Morphology of Articulated Robots with Lightweight Neural Distance Functions" [**ICRA 2025**] 
 
-![Screenshot from 2025-02-05 17-33-40](/home/yitingchen/Pictures/Screenshots/Screenshot from 2025-02-05 17-33-40.png)
+![Screenshot from 2025-02-05 17-33-40](./media/examples.png)
 
 
 
