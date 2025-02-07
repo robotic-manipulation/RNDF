@@ -57,11 +57,11 @@ if __name__ == '__main__':
     # Ground Truth from Trimesh #
     #############################
     robo = DataSampler()
-    sampled_q = [-1.64202379,  0.09702638,  0.3008685,  -1.9033781,  -0.82645173, -1.15995584, 1.15286252]
+    sampled_q = [-1.64202379,  0.09702638,  0.3008685,  -1.9033781,  -0.82645173, -1.15995584, 1.15286252] # same joint state
     robo.set_robot_joints(sampled_q)
 
-    points = [[-0.1, 0.2, -0.3], [0.1, -0.2, 0.3], [-0.1, -0.2, 0.3]]
-    print(robo.batch_calculate_signed_distance(points)*-1) # we use positive denote outside
+    points = [[-0.1, 0.2, -0.3], [0.1, -0.2, 0.3], [-0.1, -0.2, 0.3]] # same query points
+    print(robo.batch_calculate_signed_distance(points)*-1) # positive as outside
     """
     Ground Truth: 
     [[0.3183 0.4778 0.6124 0.8822 1.0209 1.0205 1.0150 1.1316]
