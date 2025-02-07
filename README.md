@@ -19,7 +19,7 @@ Implementation for paper "Encoding the Precise Morphology of Articulated Robots 
 
 ### Neural SDF in the Robot Joint Space
 
-**Lightweight, Differentiable, Parallelable, and Accurate**
+**Lightweight** (model size ~1 MB), **Differentiable**, **Parallelable**, and **Accurate** 
 
 ```python
 # see inference.py, we use KUKA iiwa 7 as an example
