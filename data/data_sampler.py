@@ -10,7 +10,7 @@ import numpy as np
 from utils import robot_kinematic
 
 
-class data_sampler(robot_kinematic):
+class DataSampler(robot_kinematic):
     def __init__(self, urdf_path=None, dataset_path=None):
         super().__init__(urdf_path)
         self.dataset_path = dataset_path
@@ -184,7 +184,7 @@ class data_sampler(robot_kinematic):
 
 if __name__ == "__main__":
     np.random.seed(16)
-    robo = data_sampler(dataset_path='../dataset/')
+    robo = DataSampler(dataset_path='../dataset/')
 
     # random joint configuration
     sampled_q = robo.sample_random_robot_config()

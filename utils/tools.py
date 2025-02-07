@@ -41,7 +41,7 @@ class robot_kinematic:
 
     def init_robot_info(self):
         for joint in self.robot.joints:
-            print('{} connects {} to {}'.format(joint.name, joint.parent, joint.child))
+            # print('{} connects {} to {}'.format(joint.name, joint.parent, joint.child))
             self._robot_joints[joint.name] = 0.
             if joint.parent not in self.link_names:
                 self.link_names.append(joint.parent)
