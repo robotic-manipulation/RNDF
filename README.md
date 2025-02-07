@@ -19,7 +19,7 @@ Implementation for paper "Encoding the Precise Morphology of Articulated Robots 
 
 ### Neural SDF in the Robot Joint Space
 
-**Lightweight** (model size ~1 MB), **Differentiable**, **Parallelable**, and **Accurate** 
+**Lightweight** (size of 64 ~ 421.9 KB; size of 128 ~1 MB), **Differentiable**, **Parallelable**, and **Accurate** 
 
 ```python
 # see inference.py, we use KUKA iiwa 7 as an example
@@ -28,9 +28,13 @@ from models import RobotNDF
 
 if __name__ == '__main__':
     device = "cuda:0" if torch.cuda.is_available() else "cpu"
-    model = RobotNDF(N=128).to(device)
+    model = RobotNDF(N=128).to(device)     # feature size of 128
     model.load_model("models/weight/128_params.pth")
 	
+    # feature size of 64
+    # model = RobotNDF(N=64).to(device)
+    # model.load_model("models/weight/64_params.pth")
+    
     ####################
     # Model Prediction #
     ####################

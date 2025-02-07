@@ -4,8 +4,13 @@ from data import DataSampler
 
 if __name__ == '__main__':
     device = "cuda:0" if torch.cuda.is_available() else "cpu"
+    # feature size of 128
     model = RobotNDF(N=128).to(device)
     model.load_model("models/weight/128_params.pth")
+
+    # feature size of 64
+    # model = RobotNDF(N=64).to(device)
+    # model.load_model("models/weight/64_params.pth")
 
     # (3, 10), 3 (joint state + position) pairs
     random_qp = torch.tensor([[-1.64202379,  0.09702638,  0.3008685,  -1.9033781,  -0.82645173, -1.15995584, 1.15286252,
