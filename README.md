@@ -1,6 +1,6 @@
 # Robot Neural Distance Function
 
-Implementation for paper "Encoding the Precise Morphology of Articulated Robots with Lightweight Neural Distance Functions" [**ICRA 2025**] 
+Implementation for paper "Implicit Articulated Robot Morphology Modeling with Configuration Space Neural Signed Distance Functions" [**ICRA 2025**] 
 
 ![Screenshot from 2025-02-05 17-33-40](./media/examples.png)
 
